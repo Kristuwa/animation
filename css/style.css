@@ -1,0 +1,285 @@
+html {
+	box-sizing: border-box;
+}
+
+body {
+	color: #4F4F4F;
+	background-color:#000000;
+
+	font-family: Montserrat, sans-serif;
+	font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.header {
+width: 1440px;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 50px;
+	padding-bottom: 112px;
+
+}
+
+.navigation-item:nth-child(1) {
+	animation-name: changeOpacity;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-delay: 0;
+	animation-fill-mode:backwards;
+}
+
+.navigation-item:nth-child(2) {
+	animation-name: changeOpacity;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-delay: 0.5s;
+	animation-fill-mode:backwards;
+}
+
+.navigation-item:nth-child(3) {
+	animation-name: changeOpacity;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-delay: 1s;
+	animation-fill-mode:backwards;
+}
+
+.navigation-item:nth-child(4) {
+	animation-name: changeOpacity;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-delay: 1.5s;
+	animation-fill-mode:backwards;
+}
+
+.navigation-item:nth-child(5) {
+	animation-name: changeOpacity;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-delay: 2s;
+	animation-fill-mode:backwards;
+}
+
+.navigation-item + .navigation-item {
+margin-left: 60px;
+}
+
+.logo {
+	width: 94px;
+	font-family: inherit;
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 1;
+
+	color: #4F4F4F;
+}
+
+.navigation-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navigation-link {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.22;
+
+	color: #828282;
+}
+
+@keyframes changeOpacity {
+	0% {
+	  opacity: 0;
+	}
+ 
+	50% {
+		opacity: 0.5;
+	}
+ 
+	100% {
+		opacity: 1;
+	}
+ }
+
+ .hero-title {
+	position: relative;
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 1.22;
+	text-align: center;
+	letter-spacing: 0.8em;
+	text-transform: uppercase;
+	color: #828282;
+	margin-bottom: 80px;
+
+	animation-name: changePosition;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-delay: 3s;
+	animation-fill-mode:backwards;
+ }
+
+ .hero-title::after {
+	
+	content: "";
+	width: 760px;
+	height: 1px;
+	background-color: #333333;
+	top: -40px;
+	left: -250px;
+	position: absolute;
+	display: block;
+ }
+
+ .gallery {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 85px;
+
+	animation-name: changePositionEnd;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-delay: 3s;
+	animation-fill-mode:backwards;
+ }
+
+ .gallery::after {
+	content: "";
+		width: 984px;
+		height: 1px;
+		background-color: #333333;
+		bottom: -50px;
+		left: 0;
+		position: absolute;
+		display: block;
+	 }
+
+ .gallery-item + .gallery-item {
+	margin-left: 60px;
+ }
+
+ .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+ }
+
+
+
+.socpublic-item {
+	margin-left: 50px;
+}
+
+ .socpublic-item + .socpublic-item {
+	
+	margin-top: 20px;
+ }
+
+ .socpublic-item:nth-child(1) {
+	animation-name: changeOpacity;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-delay: 1s;
+	animation-fill-mode:backwards;
+}
+
+.socpublic-item:nth-child(2) {
+	animation-name: changeOpacity;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-delay: 1.5s;
+	animation-fill-mode:backwards;
+}
+
+.socpublic-item:nth-child(3) {
+	animation-name: changeOpacity;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-delay: 2s;
+	animation-fill-mode:backwards;
+}
+
+.socpublic-item:nth-child(4) {
+	animation-name: changeOpacity;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-delay: 2.5s;
+	animation-fill-mode:backwards;
+}
+
+.socpublic-item:nth-child(5) {
+	animation-name: changeOpacity;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-delay: 3s;
+	animation-fill-mode:backwards;
+}
+
+.bottom-text {
+	width: 281px;
+	margin-right: 50px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.22;
+	text-align: right;
+
+	color: #828282;
+}
+
+@keyframes changePosition {
+	0% {
+	  transform: translateX(100%);
+	  opacity: 0;
+	}
+
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+ }
+
+ @keyframes changePositionEnd {
+	0% {
+	  transform: translateX(-100%);
+	  opacity: 0;
+	}
+
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+ }
